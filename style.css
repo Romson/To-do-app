@@ -1,0 +1,76 @@
+body {
+    background-image: url('https://source.unsplash.com/0BlhHSkm220');
+    background-size: cover;
+    background-position: fixed;
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#toDoSection {
+    margin-top: 60px;
+}
+
+.rowSection {
+    width: 80% !important;
+    margin: auto !important;
+}
+
+.listItems {
+    width: 55%;
+    margin: auto;
+}
+
+
+
+#listItems {
+    margin-top: 20px;
+    padding-left: 25px;
+}
+
+#inputField {
+    padding: 15px 30px 15px 10px;
+    border: 3px solid #fff;
+    color: #fff;
+    background-color: #6a8494;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+#inputField::placeholder {
+    color: #fff !important;
+}
+
+button {
+    padding: 15px;
+    border: 3px solid #fff;
+    color: #fff;
+    background-color: #6a8494;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+li {
+    list-style: none;
+    display: block;
+    padding: 15px 30px 15px 62px;
+    border: 3px solid #fff;
+    color: #fff;
+    background-color: #6a8494;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    font-size: 20px;
+}
+
+li:first-child {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+li:last-child {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
