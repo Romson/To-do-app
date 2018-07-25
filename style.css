@@ -23,6 +23,12 @@ h1 {
     margin: auto;
 }
 
+#taskDone {
+    position: absolute;
+    right: 35px;
+    margin-top: 10px;
+    transform: scale(1.5);
+}
 
 
 #listItems {
@@ -57,7 +63,7 @@ button {
 li {
     list-style: none;
     display: block;
-    padding: 15px 30px 15px 62px;
+    padding: 15px 30px 15px 20px;
     border: 3px solid #fff;
     color: #fff;
     background-color: #6a8494;
