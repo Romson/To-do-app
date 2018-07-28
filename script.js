@@ -12,19 +12,26 @@ listItems.addEventListener("click", function(){
 
 function checkClicked() {
     // get checkbox
-    var checkBox = document.querySelector("input[type=checkbox]");
+    var checkBox = document.querySelectorAll(".taskDone");
     // get listItem
-    var listItem = document.querySelector(".newListItem");
+    var listItem = document.querySelectorAll(".newListItem");
     // if checkbox is checked line-through listItem
-    if (checkBox.checked == true) {
-        listItem.style.textDecoration = "line-through";
-    }
-    else {
-        listItem.style.textDecoration = "none";
+    // if (checkBox.checked) {
+    //     listItem.style.textDecoration = "line-through";
+    // }
+    // else {
+    //     listItem.style.textDecoration = "none";
+    // }
+
+    for (var i = 0; i < checkBox.length && i < listItem.length; i++) {
+        if (checkBox[i].checked) {
+            listItem[i].style.textDecoration = "line-through";
+        }
+        else {
+            listItem[i].style.textDecoration = "none";
+        }
     }
 }
-
-
 
 function addTask() {
     var newListItem = document.createElement('li');

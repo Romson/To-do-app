@@ -98,6 +98,7 @@ li:last-child {
     border-bottom-right-radius: 25px;
 }
 
-.strikeThroughLi {
+newListItem {
     text-decoration: line-through !important;
+    color: red !important;
 }
