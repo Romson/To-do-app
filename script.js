@@ -5,23 +5,36 @@ inputField.addEventListener('change', () => addTask());
 
 clearTaskButton.addEventListener('click', () => clearTask());
 
-taskDone.addEventListener('click', () => taskDone());
+// event LI checkBox added
+listItems.addEventListener("click", function(){
+    checkClicked();
+});
+
+function checkClicked() {
+    // get checkbox
+    var checkBox = document.querySelector("input[type=checkbox]");
+    // get listItem
+    var listItem = document.querySelector(".newListItem");
+    // if checkbox is checked line-through listItem
+    if (checkBox.checked == true) {
+        listItem.style.textDecoration = "line-through";
+    }
+    else {
+        listItem.style.textDecoration = "none";
+    }
+}
 
 
-// var taskDone = document.document.querySelector("input[type='checkbox']");
-
-// taskDone.addEventListener('click', function(){
-//     checkbox.newListItem.style.textDecoration = "line-through";
-// });
 
 function addTask() {
-    var newListItem         = document.createElement('li');
-    newListItem.innerHTML   = inputField.value;
+    var newListItem = document.createElement('li');
+    newListItem.innerHTML = inputField.value;
     listItems.appendChild(newListItem);
+    newListItem.classList.add("newListItem");
     // add checkbox after newListItem has been appended
     var checkbox            = document.createElement("input");
     checkbox.type           = "checkbox";
-    checkbox.id             = "taskDone";
+    checkbox.classList.add("taskDone");
     newListItem.appendChild(checkbox);
     inputField.value = ''; // reset field value to blank for next entry
 }

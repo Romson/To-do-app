@@ -4,6 +4,23 @@ body {
     background-position: fixed;
 }
 
+@media screen and (max-width: 968px) {
+    body {
+        background-image: url('https://source.unsplash.com/0BlhHSkm220');
+        background-size: cover;
+        background-position: fixed;
+        height: 100vh;
+    }
+
+    input {
+        margin-bottom: 20px;
+    }
+
+    li.newListItem {
+        width: 50vw;
+    }
+}
+
 h1 {
     color: #fff;
     margin-bottom: 20px;
@@ -23,7 +40,7 @@ h1 {
     margin: auto;
 }
 
-#taskDone {
+.taskDone {
     position: absolute;
     right: 35px;
     margin-top: 10px;
@@ -79,4 +96,8 @@ li:first-child {
 li:last-child {
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+}
+
+.strikeThroughLi {
+    text-decoration: line-through !important;
 }
