@@ -19,6 +19,20 @@ body {
     li.newListItem {
         width: 50vw;
     }
+
+    #inputField {
+        
+        float: left;
+        width: 90% !important;
+    }
+
+    #buttons {
+        width: 100vw;
+    }
+
+    .listItems {
+        width: 120% !important;
+    }
 }
 
 h1 {
@@ -36,8 +50,8 @@ h1 {
 }
 
 .listItems {
-    width: 55%;
-    margin: auto;
+    width: 69% !important;
+    margin: auto !important;
 }
 
 .taskDone {
@@ -46,7 +60,6 @@ h1 {
     margin-top: 10px;
     transform: scale(1.5);
 }
-
 
 #listItems {
     margin-top: 20px;
@@ -61,6 +74,7 @@ h1 {
     box-shadow: 0 0 20px rgba(0, 0, 0, .2);
     font-size: 20px;
     border-radius: 25px;
+    width: 80%;
 }
 
 #inputField::placeholder {
@@ -75,6 +89,7 @@ button {
     box-shadow: 0 0 20px rgba(0, 0, 0, .2);
     font-size: 20px;
     border-radius: 25px;
+    width: 30%;
 }
 
 li {
