@@ -15,14 +15,7 @@ function checkClicked() {
     var checkBox = document.querySelectorAll(".taskDone");
     // get listItem
     var listItem = document.querySelectorAll(".newListItem");
-    // if checkbox is checked line-through listItem
-    // if (checkBox.checked) {
-    //     listItem.style.textDecoration = "line-through";
-    // }
-    // else {
-    //     listItem.style.textDecoration = "none";
-    // }
-
+    // strike-through LI if checkboxed is checked
     for (var i = 0; i < checkBox.length && i < listItem.length; i++) {
         if (checkBox[i].checked) {
             listItem[i].style.textDecoration = "line-through";
@@ -33,6 +26,7 @@ function checkClicked() {
     }
 }
 
+// addtask function
 function addTask() {
     var newListItem = document.createElement('li');
     newListItem.innerHTML = inputField.value;
