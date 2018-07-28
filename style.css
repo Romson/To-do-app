@@ -97,8 +97,3 @@ li:last-child {
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
-
-newListItem {
-    text-decoration: line-through !important;
-    color: red !important;
-}
