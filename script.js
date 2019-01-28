@@ -1,8 +1,6 @@
 // checking for false below prevents the change event from also firing
 addTaskButton.addEventListener('click', () => false ? addTask() : 'do not fire change event');
-
 inputField.addEventListener('change', () => addTask());
-
 clearTaskButton.addEventListener('click', () => clearTask());
 
 // event LI checkBox added
